@@ -4,7 +4,7 @@ from joblib import Parallel, delayed
 import multiprocessing
 import pandas as pd
 
-regexes = ['@\d{3,9}','^(https?|ftp)://[^\s/$.?#].[^\s]*$','&amp;','^(https?|ftp)://[^\s/$.?#].[^\s]*$','\/[A-Z]{2}','\^[A-Z]{2}','https://t\..{2,100}','https://t\..{1,3}\/[1-9a-zA-Z]']
+regexes = ['@\d{3,9}','^(https?|ftp)://[^\s/$.?#].[^\s]*$','&amp;','^(https?|ftp)://[^\s/$.?#].[^\s]*$','\/[A-Z]{2,5}','\^[A-Z]{2,5}','https://t\..{2,100}','https://t\..{1,3}\/[1-9a-zA-Z]','\n']
 
 
 translatedEmoji = pd.read_csv('twcs-translatedEmoji.csv')

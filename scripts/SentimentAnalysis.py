@@ -17,7 +17,7 @@ os.environ["CORENLP_HOME"] = corenlp_dir
 # Import client module
 from stanza.server import CoreNLPClient
 
-threads = pd.read_csv('threads.csv', dtype = {'tweet_id': str} )
+threads = pd.read_csv('threads.csv', dtype = {'tweet_id': str})
 threads["first_sentim_l"] = ""
 threads["last_sentim_l"] = ""
 threads["first_tweet_text"] = ""
@@ -27,16 +27,16 @@ mask = (threads["length"] > 2) &  threads["verify_alternance"] & threads["inboun
 thread_ok = threads[mask].copy()
 thread_ok.set_index('tweet_id', inplace = True)
 
-full_df = pd.read_csv("twcs-CleanedAndTranslatedEmoji.csv", na_filter= False, parse_dates = ['created_at'],
+full_df = pd.read_csv("emojiTranslatedCleanedNoUnderscore.csv", na_filter= False, parse_dates = ['created_at'],
                       dtype = {'tweet_id': str,'in_response_to_tweet_id': str, 'inbound':bool, 'response_tweet_id':str })
 full_df.set_index("tweet_id", inplace = True)
 
 inbound_col, tweet_col, first_sentim_col, last_sentim_col, first_tweet_col, last_tweet_col = thread_ok.columns.get_indexer(["inbound_l","tweet_l","first_sentim_l", "last_sentim_l", "first_tweet_text","last_tweet_text"])
 print("Starting a server with the Python \"with\" statement...")
 with CoreNLPClient(annotators=['sentiment'], 
-                   memory='6G', endpoint='http://localhost:9001', be_quiet=True) as client:
+                   memory='6G', endpoint='http://localhost:9001', be_quiet=True, timeout = 100000) as client:
     print("Processing this number of valid threads: ", len(thread_ok))
-    for row in range(119233,len(thread_ok)):           #hard coded the thread that has 140 middle_finger emoticons
+    for row in range(len(thread_ok)):           
         if row % 1000 == 0:
             print("Working on thread number: ", row, "time: ", dt.datetime.now().time())
         inbound_text, tweet_text = thread_ok.iloc[row,[inbound_col,tweet_col]]
@@ -50,7 +50,7 @@ with CoreNLPClient(annotators=['sentiment'],
         last_doc = client.annotate(last_tweet_text)
         first_sentiment = []
         last_sentiment = []
-        for sentence in first_doc.sentence:
+        for i, sentence in enumerate(first_doc.sentence):
             first_sentiment.append(sentence.sentiment)
         for sentence in last_doc.sentence:
             last_sentiment.append(sentence.sentiment)

@@ -1,0 +1,10 @@
+[(0, '0.006*"flight" + 0.006*"best" + 0.005*"service" + 0.004*"customer" + 0.004*"check" + 0.004*"seats" + 0.004*"get" + 0.004*"destination" + 0.004*"great" + 0.004*"charged"'),
+ (1, '0.009*"flight" + 0.005*"much" + 0.004*"dtw." + 0.004*"excited" + 0.004*"dm" + 0.004*"need" + 0.004*"check" + 0.003*"please" + 0.003*"email" + 0.003*"flights?"'),
+ (2, '0.006*"not" + 0.006*"flight" + 0.006*"gate" + 0.005*"delta" + 0.005*"no" + 0.004*"thanks" + 0.004*"get" + 0.004*"getting" + 0.004*"phone" + 0.004*"bag"'),
+ (3, '0.008*"flight" + 0.006*"please" + 0.005*"get" + 0.005*"change" + 0.005*"-" + 0.004*"delta" + 0.004*"need" + 0.004*"no" + 0.004*"what\'s" + 0.004*"going"'),
+ (4, '0.006*"flight" + 0.005*"not" + 0.005*"customer" + 0.004*"care" + 0.004*"get" + 0.004*"need" + 0.004*"service" + 0.004*"wifi" + 0.004*"delayed" + 0.003*"thank"'),
+ (5, '0.008*"flight" + 0.005*"help" + 0.005*"need" + 0.005*"hold" + 0.005*"hours" + 0.005*"2" + 0.004*"not" + 0.004*"seat" + 0.004*"got" + 0.003*"change"'),
+ (6, '0.007*"flight" + 0.005*"receipt" + 0.004*"service" + 0.004*"today." + 0.004*"hello" + 0.004*"great" + 0.004*"dl" + 0.004*"customer" + 0.004*"hi" + 0.004*"1st"'),
+ (7, '0.008*"flight" + 0.007*"help" + 0.006*"skymiles" + 0.006*"no" + 0.005*"need" + 0.005*"change" + 0.005*"not" + 0.004*"would" + 0.004*"someone" + 0.004*"delayed"'),
+ (8, '0.006*"get" + 0.005*"flight" + 0.005*"delay" + 0.004*"suck" + 0.004*"help" + 0.004*"service" + 0.004*"nice" + 0.004*"sfo" + 0.004*"love" + 0.004*"4"'),
+ (9, '0.008*"flight" + 0.006*"thank" + 0.005*"not" + 0.004*"help" + 0.004*"atl" + 0.004*"delayed" + 0.004*"get" + 0.004*"check" + 0.004*"upgrade" + 0.004*"new"')]

@@ -1,4 +1,4 @@
-[(0, '0.006*"flight" + 0.006*"best" + 0.005*"service" + 0.004*"customer" + 0.004*"check" + 0.004*"seats" + 0.004*"get" + 0.004*"destination" + 0.004*"great" + 0.004*"charged"'),
+›[(0, '0.006*"flight" + 0.006*"best" + 0.005*"service" + 0.004*"customer" + 0.004*"check" + 0.004*"seats" + 0.004*"get" + 0.004*"destination" + 0.004*"great" + 0.004*"charged"'),
  (1, '0.009*"flight" + 0.005*"much" + 0.004*"dtw." + 0.004*"excited" + 0.004*"dm" + 0.004*"need" + 0.004*"check" + 0.003*"please" + 0.003*"email" + 0.003*"flights?"'),
  (2, '0.006*"not" + 0.006*"flight" + 0.006*"gate" + 0.005*"delta" + 0.005*"no" + 0.004*"thanks" + 0.004*"get" + 0.004*"getting" + 0.004*"phone" + 0.004*"bag"'),
  (3, '0.008*"flight" + 0.006*"please" + 0.005*"get" + 0.005*"change" + 0.005*"-" + 0.004*"delta" + 0.004*"need" + 0.004*"no" + 0.004*"what\'s" + 0.004*"going"'),

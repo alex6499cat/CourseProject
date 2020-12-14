@@ -19,7 +19,7 @@ We have provided several playground files, or files meant for our tester to "tes
 - Overall sentiment change 
   - tester files: `Jupyter Notebooks/FromAdjacencyToDataframe.ipynb` `Jupyter Notebooks/Sentiment improvement by company and month.ipynb`
                   `Jupyter Notebooks/SentimentAnalysis.ipynb`
-  - dependencies: pandas, stanza CoreNLP, datetime
+  - dependencies: pandas, datetime, stanza CoreNLP (java & pytorch needed for stanza)
 - Topic analysis:
   - tester files: `Jupyter Notebooks/DeltaTopicsDetermination.ipynb` `Jupyter Notebooks/Sentiment of topics.ipynb`
   - dependencies: gensim, nltk, collections, pandas

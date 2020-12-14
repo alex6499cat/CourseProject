@@ -17,8 +17,9 @@ Along with python notebooks, we also have a well put together excel spreadsheet 
 
 We have provided several playground files, or files meant for our tester to "test" our code with since they are more lightweight.
 - Overall sentiment change 
-  - tester files:
-  - dependencies:pandas, stanza CoreNLP, datetime
+  - tester files: `Jupyter Notebooks/FromAdjacencyToDataframe.ipynb and Jupyter Notebooks/Sentiment improvement by company and month.ipynb`
+                  `Jupyter Notebooks/SentimentAnalysis.ipynb`
+  - dependencies: pandas, stanza CoreNLP, datetime
 - Topic analysis:
   - tester files: `Jupyter Notebooks/DeltaTopicsDetermination.ipynb and Jupyter Notebooks/Sentiment of topics.ipynb`
   - dependencies: gensim, nltk, collections, pandas

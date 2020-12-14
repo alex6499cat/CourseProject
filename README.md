@@ -21,7 +21,7 @@ We have provided several playground files, or files meant for our tester to "tes
                   `Jupyter Notebooks/SentimentAnalysis.ipynb`
   - dependencies: pandas, stanza CoreNLP, datetime
 - Topic analysis:
-  - tester files: `Jupyter Notebooks/DeltaTopicsDetermination.ipynb and Jupyter Notebooks/Sentiment of topics.ipynb`
+  - tester files: `Jupyter Notebooks/DeltaTopicsDetermination.ipynb` `Jupyter Notebooks/Sentiment of topics.ipynb`
   - dependencies: gensim, nltk, collections, pandas
 - Consecutive sentiment change (developed on python 3.7.3)
   - tester files: `Jupyter Notebooks/con_sent_tester.ipynb`
